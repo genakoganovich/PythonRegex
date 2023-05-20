@@ -7,5 +7,7 @@ result = re.finditer(pattern, string, 0)
 
 print(len(list(result)))
 
+print(len(list(result)))
+
 for i in result:
     print(i.group())

@@ -30,7 +30,7 @@ def test(file_name, build_regex_func):
                 assert result.pop(0) == args_buffer.pop(0)
                 print(line, 'ok')
             except AssertionError:
-                print(line)
+                print(line, 'not ok')
 
         if answers_countdown == 0:
             args_count = 0

@@ -1,0 +1,4 @@
+Категория: Телефоны\nSupreme Burner\nMotorola Razr\nКатегория: Смарт часы и браслеты\nApple Watch 6\nGarmin Venu\nXiaomi Mi Smart Band 6\nКатегория: Игры\nSpore
+["", "Supreme Burner\\nMotorola Razr\\n", "Apple Watch 6\\nGarmin Venu\\nXiaomi Mi Smart Band 6\\n", "Spore"]
+Категория: Персональные компьютеры\nDEXP Mars E326\nMSI MAG Codex 5 11SC-670XRU\nZET Gaming WARD H125\nКатегория: Ноутбуки\nMSI GE76 11UH-261RU\nLenovo Legion 7 16ITHg6\nApple MacBook Pro Z14V0008E\nMSI GS76 11UH-265RU\nMSI GS66 Stealth 11UH-252RU\nMSI GS66 11UH-263RU\nКатегория: Моноблоки\nHP 32-a1006ur\nApple iMac
+["", "DEXP Mars E326\\nMSI MAG Codex 5 11SC-670XRU\\nZET Gaming WARD H125\\n", "MSI GE76 11UH-261RU\\nLenovo Legion 7 16ITHg6\\nApple MacBook Pro Z14V0008E\\nMSI GS76 11UH-265RU\\nMSI GS66 Stealth 11UH-252RU\\nMSI GS66 11UH-263RU\\n", "HP 32-a1006ur\\nApple iMac"]

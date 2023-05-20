@@ -1,0 +1,4 @@
+Привет, как твои дела? Привет, нормально, учу регулярные выражения.
+["Привет", "", "как", "твои", "дела", "", "Привет", "", "нормально", "", "учу", "регулярные", "выражения", ""]
+The first one is heavy!This actually goes really well with Chris's workout he's doing.
+["The", "first", "one", "is", "heavy", "This", "actually", "goes", "really", "well", "with", "Chris's", "workout", "he's", "doing", ""]

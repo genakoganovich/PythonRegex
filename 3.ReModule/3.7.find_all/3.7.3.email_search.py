@@ -1,4 +1,4 @@
-import util_3_7_2, re
+import util_3_7, re
 
 
 def build_regex():
@@ -7,4 +7,4 @@ def build_regex():
 
 
 # list(map(lambda x: print(x), re.findall(build_regex(), input(), 0)))
-util_3_7_2.test('3.7.3.input.txt', build_regex)
+util_3_7.test('3.7.3.input.txt', build_regex)

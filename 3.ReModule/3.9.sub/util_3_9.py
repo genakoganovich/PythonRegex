@@ -1,7 +1,7 @@
-import re, sys, json, functools
+import re, sys
 
 
-def test(file_name, build_regex_func):
+def test(file_name, build_regex_func, replace):
     sys.stdin = open(file_name, 'r', encoding='utf8')
     args_buffer = []
     args_count = 0
@@ -12,21 +12,19 @@ def test(file_name, build_regex_func):
         args_count += 1
 
         if args_count == 1:
-            result = re.sub(build_regex_func(), args_buffer.pop(0))
+            result = re.sub(build_regex_func(), replace, args_buffer.pop(0))
 
         if args_count == 2:
             args_count = 0
             try:
                 line = args_buffer[0]
-                sentences = json.loads(args_buffer.pop(0))
-                assert functools.reduce(lambda x, y: x and y,
-                                        map(lambda p, q: p == q, result, sentences), True)
-                print(f"{line} split ok")
+                assert result == args_buffer.pop(0)
+                print(f"{line} replace ok")
             except AssertionError:
-                print(f"CAN'T split {line}")
+                print(f"{line} replace NOT ok")
 
 
-def test_full_name(file_name, build_regex_func):
+def test_name(file_name, build_regex_func, replace):
     sys.stdin = open(file_name, 'r', encoding='utf8')
     args_buffer = []
     args_count = 0
@@ -36,16 +34,16 @@ def test_full_name(file_name, build_regex_func):
         args_buffer.append(line.rstrip())
         args_count += 1
 
-        if args_count == 1:
-            result = re.sub(build_regex_func(), args_buffer.pop(0))
-
         if args_count == 2:
+            result = re.sub(build_regex_func(args_buffer.pop(0)), replace, args_buffer.pop(0))
+
+        if args_count == 3:
             args_count = 0
             try:
                 line = args_buffer[0]
-                sentences = json.loads(args_buffer.pop(0))
-                assert functools.reduce(lambda x, y: x and y,
-                                        map(lambda p, q: p == q, result, sentences), True)
-                print(f"{line} split ok")
+                assert result == args_buffer.pop(0)
+                print(f"{line} replace ok")
             except AssertionError:
-                print(f"CAN'T split {line}")
+                print(result)
+                print(f"{line} replace NOT ok")
+

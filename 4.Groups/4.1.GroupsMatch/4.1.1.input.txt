@@ -1,0 +1,13 @@
+<noscript class="noscript"><p class="l-header">Сайт не работает<br>без JavaScript 😕</p></noscript>
+1
+Сайт не работает<br>без JavaScript 😕
+<p>Это параграф</p>
+1
+Это параграф
+<main><section class="faq__section content"><h2 class="h-header">Частозадаваемые вопросы</h2><div class="faq__megawrapper"><div class="faq__wrapper"><details><summary class="l-header">Какой-то вопрос?</summary><p class="details__paragraph p-paragraph">Какой-то ответ</p></details><details><summary class="l-header">Какой-то вопрос?</summary><p class="details__paragraph p-paragraph">Какой-то ответ</p></details><details><summary class="l-header">Какой-то вопрос?</summary><p class="details__paragraph p-paragraph">Какой-то
+2
+Какой-то ответ
+Какой-то ответ
+<p Неправильный параграф</p></p>1</p><p>2</p><p3/p>
+1
+2

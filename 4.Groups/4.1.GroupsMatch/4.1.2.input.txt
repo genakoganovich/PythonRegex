@@ -1,0 +1,25 @@
+В этом https://stepik.org/lesson/704265/step/2?unit=704697#test тексте https://example.com/ очень много https://keep.google.com/#home разных http://oldastoundingrelaxedlaugh.neverssl.com/online ссылок. 
+Полная ссылка: https://stepik.org/lesson/704265/step/2?unit=704697#test
+Протокол: https | Домен: stepik.org | Параметры: ?unit=704697 | Якорь: #test
+
+Полная ссылка: https://example.com/
+Протокол: https | Домен: example.com | Параметры: None | Якорь: None
+
+Полная ссылка: https://keep.google.com/#home
+Протокол: https | Домен: keep.google.com | Параметры: None | Якорь: #home
+
+Полная ссылка: http://oldastoundingrelaxedlaugh.neverssl.com/online
+Протокол: http | Домен: oldastoundingrelaxedlaugh.neverssl.com | Параметры: None | Якорь: None
+Наступаешь на одни и те же грабли: https://vk.com/video-460389_160321403 https://pikabu.ru/story/vse_schitayut_sebya_unikalnyimi_poka_ne_prikhoditsya_pokupat_domen_dlya_svoego_startapa_9132005#comments https://www.google.com/search?q=query https://yandex.ru/search/?lr=16&text=query
+Полная ссылка: https://vk.com/video-460389_160321403
+Протокол: https | Домен: vk.com | Параметры: None | Якорь: None
+
+Полная ссылка: https://pikabu.ru/story/vse_schitayut_sebya_unikalnyimi_poka_ne_prikhoditsya_pokupat_domen_dlya_svoego_startapa_9132005#comments
+Протокол: https | Домен: pikabu.ru | Параметры: None | Якорь: #comments
+
+Полная ссылка: https://www.google.com/search?q=query
+Протокол: https | Домен: www.google.com | Параметры: ?q=query | Якорь: None
+
+Полная ссылка: https://yandex.ru/search/?lr=16&text=query
+Протокол: https | Домен: yandex.ru | Параметры: ?lr=16&text=query | Якорь: None
+https://www.google+com/ https://www.google?com/ https://www.google#com/

@@ -25,4 +25,4 @@
 Полная ссылка: https://yandex.ru/search/?lr=16&text=query
 Протокол: https | Домен: yandex.ru | Параметры: ?lr=16&text=query | Якорь: None
 https://www.google+com/ https://www.google?com/ https://www.google#com/
-0
+1

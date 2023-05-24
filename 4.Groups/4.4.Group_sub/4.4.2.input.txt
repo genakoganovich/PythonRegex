@@ -1,0 +1,6 @@
+Как же я люблю **Markdown**!
+Как же я люблю <strong>Markdown</strong>!
+А тут и **Bold text**, и *Italic*!
+А тут и <strong>Bold text</strong>, и <em>Italic</em>!
+*Курсив* и **Жирный текст**
+<em>Курсив</em> и <strong>Жирный текст</strong>

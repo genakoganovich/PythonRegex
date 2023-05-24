@@ -1,9 +1,9 @@
 import re
-import util_4_1
+import util_4_2
 
 
 def make_regex():
-    return r'</?([a-z0-9]+).*?>'
+    return r'([0-9]+):([a-zA-Z0-9]+):([a-z0-9]+)'
 
 
 def make_result(found):
@@ -15,4 +15,4 @@ def make_found(make_regex_func, line):
 
 
 print(make_result(make_found(make_regex, input())))
-# util_4_1.test_413('4.1.3.input.txt', make_result, make_found, make_regex)
+# util_4_2.test('4.2.2.input.txt', make_result, make_found, make_regex)

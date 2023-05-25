@@ -7,11 +7,11 @@ def make_regex():
 
 
 def make_replacement(match_obj):
-    return int(match_obj[0]) ** 2
+    return str(int(match_obj[0]) ** 2)
 
 
 def make_result(regex, make_replacement_func, string):
-    return re.subn(regex, make_replacement_func, string)
+    return re.sub(regex, make_replacement_func, string)
 
 
 print(make_result(make_regex(), make_replacement, input()))

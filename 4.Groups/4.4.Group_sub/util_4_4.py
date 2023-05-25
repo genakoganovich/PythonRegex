@@ -1,4 +1,8 @@
-import sys
+import sys, re
+
+
+def make_result(regex, make_replacement_func, string):
+    return re.sub(regex, make_replacement_func, string)
 
 
 def test(file_name, make_result_func, regex, make_replace_func):

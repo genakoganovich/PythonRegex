@@ -13,9 +13,5 @@ def make_replacement(match_obj):
         return fr'<strong>{match_obj.group(2)}</strong>'
 
 
-def make_result(regex, make_replacement_func, sting):
-    return re.sub(regex, make_replacement_func, sting)
-
-
-# print(make_result(make_regex(),make_replacement, input()))
-util_4_4.test('4.4.2.input.txt', make_result, make_regex(), make_replacement)
+print(util_4_4.make_result(make_regex(),make_replacement, input()))
+# util_4_4.test('4.4.2.input.txt', util_4_4.make_result, make_regex(), make_replacement)

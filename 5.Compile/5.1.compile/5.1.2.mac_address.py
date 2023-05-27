@@ -1,5 +1,5 @@
 import re
-import util_4_6
+import util_5_1
 
 
 def make_regex():
@@ -12,5 +12,5 @@ def make_result(regex, string):
 
 # print(make_result(make_regex(), input()))
 # pattern = re.compile(':'.join([r'[0-9A-F]{2}' for i in range(6)]))
-# util_4_6.test('4.6.2.input.txt', make_result, make_regex())
+util_5_1.test('5.1.2.input.txt', make_result, make_regex())
 

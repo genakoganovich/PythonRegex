@@ -6,10 +6,7 @@ def make_regex():
 
 
 def make_replacement(match_obj):
-    if str(match_obj[0]).islower():
-        return 'x'
-    else:
-        return 'X'
+    return {'o': 'x', 'O': 'X'}[match_obj[0]]
 
 
 def make_result(regex, string, make_replacement_func):

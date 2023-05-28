@@ -1,4 +1,5 @@
 import re
+import util_6_2
 
 
 def make_regex():
@@ -13,4 +14,5 @@ def make_result(regex, string, make_replacement_func):
     return re.sub(regex, make_replacement_func, string)
 
 
-print(make_result(make_regex(), input(), make_replacement))
+# print(make_result(make_regex(), input(), make_replacement))
+util_6_2.test('6.2.2.input.txt', make_result, make_regex(), make_replacement)

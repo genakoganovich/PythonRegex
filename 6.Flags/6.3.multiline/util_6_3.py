@@ -1,34 +1,11 @@
 import sys
 
 
-def test(file_name, make_result_func, regex):
-    sys.stdin = open(file_name, 'r', encoding='utf8')
-    args_buffer = []
-    args_count = 0
-    result = None
-
-    for line in sys.stdin:
-        args_buffer.append(line.rstrip())
-        args_count += 1
-
-        if args_count == 1:
-            result = make_result_func(regex, args_buffer.pop(0))
-
-        if args_count == 2:
-            args_count = 0
-
-            try:
-                assert result == args_buffer.pop(0)
-                print(f'{result} is ok')
-            except AssertionError:
-                print(f'{result} is NOT ok')
-
-
 def test_long_string(file_name, make_result_func, regex):
     sys.stdin = open(file_name, 'r', encoding='utf8')
     args_buffer = []
     args_count = 0
-    lines_count = -1
+    input_size = 0
     result = None
 
     for line in sys.stdin:
@@ -36,13 +13,15 @@ def test_long_string(file_name, make_result_func, regex):
         args_count += 1
 
         if args_count == 1:
-            result = make_result_func(regex, args_buffer.pop(0))
+            input_size = int(args_buffer.pop(0).rstrip())
 
-        if args_count == 2:
+        if args_count == input_size:
             args_count = 0
-
+            input_size = 0
+            result = make_result_func(regex, ''.join(args_buffer[:-1]))
+            del args_buffer[:-1]
             try:
-                assert result == args_buffer.pop(0)
+                assert result == args_buffer.pop(0).rstrip()
                 print(f'{result} is ok')
             except AssertionError:
                 print(f'{result} is NOT ok')

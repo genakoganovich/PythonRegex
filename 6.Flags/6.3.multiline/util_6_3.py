@@ -1,7 +1,7 @@
 import sys
 
 
-def test(file_name, make_result_func, regex, make_replacement_func):
+def test(file_name, make_result_func, regex):
     sys.stdin = open(file_name, 'r', encoding='utf8')
     args_buffer = []
     args_count = 0
@@ -12,7 +12,7 @@ def test(file_name, make_result_func, regex, make_replacement_func):
         args_count += 1
 
         if args_count == 1:
-            result = make_result_func(regex, args_buffer.pop(0), make_replacement_func)
+            result = make_result_func(regex, args_buffer.pop(0))
 
         if args_count == 2:
             args_count = 0
@@ -24,14 +24,15 @@ def test(file_name, make_result_func, regex, make_replacement_func):
                 print(f'{result} is NOT ok')
 
 
-def test_hello(file_name, make_result_func, regex):
+def test_long_string(file_name, make_result_func, regex):
     sys.stdin = open(file_name, 'r', encoding='utf8')
     args_buffer = []
     args_count = 0
+    lines_count = -1
     result = None
 
     for line in sys.stdin:
-        args_buffer.append(line.rstrip())
+        args_buffer.append(line)
         args_count += 1
 
         if args_count == 1:

@@ -1,0 +1,14 @@
+MySendMessage
+my_send_message
+RegularExpression
+regular_expression
+VUpperCase
+v_upper_case
+ThisFunctionIsEmpty
+this_function_is_empty
+Case
+case
+SomeNumbers123
+some_numbers_123
+VeryVeryBigVariable123
+very_very_big_variable_123

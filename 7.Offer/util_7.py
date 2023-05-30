@@ -33,12 +33,14 @@ def test_vc(file_name, make_result_func, regex):
     args_buffer = []
     args_count = 0
     result = None
+    string = None
 
     for line in sys.stdin:
         args_buffer.append(line.rstrip())
         args_count += 1
 
         if args_count == 1:
+            string = args_buffer[0]
             result = make_result_func(regex, args_buffer.pop(0))
 
         if args_count == 2:
@@ -46,6 +48,6 @@ def test_vc(file_name, make_result_func, regex):
 
             try:
                 assert result == args_buffer.pop(0)
-                print(f'{result} is ok')
+                print(f'{string} is ok')
             except AssertionError:
-                print(f'{result} is NOT ok')
+                print(f'{string} is NOT ok')

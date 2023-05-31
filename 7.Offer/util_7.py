@@ -51,3 +51,28 @@ def test_vc(file_name, make_result_func, regex):
                 print(f'{string} is ok')
             except AssertionError:
                 print(f'{string} is NOT ok')
+
+
+def test_find_repeated(file_name, make_result_func):
+    sys.stdin = open(file_name, 'r', encoding='utf8')
+    args_buffer = []
+    args_count = 0
+    result = None
+    string = None
+
+    for line in sys.stdin:
+        args_buffer.append(line.rstrip())
+        args_count += 1
+
+        if args_count == 1:
+            string = args_buffer[0]
+            result = make_result_func(args_buffer.pop(0))
+
+        if args_count == 2:
+            args_count = 0
+
+            try:
+                assert str(result) == args_buffer.pop(0)
+                print(f'{string} is ok')
+            except AssertionError:
+                print(f'{string} is NOT ok')
